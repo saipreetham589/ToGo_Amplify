@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Amplify } from 'aws-amplify';
 import { generateClient } from '@aws-amplify/api';
-import awsExports from '../aws-exports.js';
-import { listGroceryItems } from '../graphql/queries.js';
-import { createGroceryItem, updateGroceryItem, deleteGroceryItem } from '../graphql/mutations.js';
+import awsExports from './aws-exports.js';
+import { listGroceryItems } from './graphql/queries.js';
+import { createGroceryItem, updateGroceryItem, deleteGroceryItem } from './graphql/mutations.js';
 import './GroceryList.css'; // Import the CSS file
 
 Amplify.configure(awsExports);
