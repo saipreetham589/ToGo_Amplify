@@ -1,0 +1,7 @@
+type GroceryItem @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  name: String!
+  quantity: Int!
+  purchased: Boolean!
+  createdAt: AWSDateTime
+}
